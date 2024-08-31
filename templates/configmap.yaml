@@ -3,5 +3,4 @@ kind: ConfigMap
 metadata:
   name: {{ include "myapp.fullname" .}}
 data:
-  default.json: |
 {{ (.Files.Glob "config/*").AsConfig | indent 4 }}
