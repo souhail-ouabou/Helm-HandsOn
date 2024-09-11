@@ -1,3 +1,1 @@
-{{- if not .Values.important -}}
-{{- fail "Please provide the important value" -}}
-{{- end -}}
+{{ include "myapp.fullname" . }}
