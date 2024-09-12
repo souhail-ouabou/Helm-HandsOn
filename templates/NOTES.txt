@@ -1,1 +1,1 @@
-{{ .Values.imported.containerPort }}
+{{ .Values.imported.containerPorts.redis }}
